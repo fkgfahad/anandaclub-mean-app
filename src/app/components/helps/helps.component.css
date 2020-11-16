@@ -1,0 +1,32 @@
+#navs {
+  border-right: 1px solid #0003;
+  overflow-y: auto;
+}
+#content {
+	overflow-y: auto;
+}
+.hd p {
+	margin: 0;
+	padding: 5px 0;
+	font-size: 20px;
+	color: #7d23d1;
+}
+ul.mnv {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+ul.mnv li {
+	margin: 5px 0;
+}
+ul.mnv li a {
+  color: #960096;
+  transition: 0.15s;
+	font-size: 15px;
+	padding: 2px 0;
+	display: block;
+}
+ul.mnv li a:hover, ul.mnv li a:focus, ul.mnv li a:active {
+  color: #7e007e;
+  text-decoration: underline;
+}

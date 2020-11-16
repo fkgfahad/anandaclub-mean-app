@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+body{margin:0;-webkit-transition:0s;-o-transition:0s;transition:0s;}
+.ld, .ld::before {margin:auto;max-width:205px}
+.bp {
+  width:100%;
+  height:100%;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-align:center;
+  -ms-flex-align:center;
+  align-items:center;
+  -webkit-box-pack:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+  position:fixed;
+  top:0;
+  left:0;
+  background-color:#808;
+}
+.ld {
+  position:relative;
+  color:rgba(0,0,0,.3);
+  font-size:35px;
+  font-family:sans-serif
+}
+.ld::before {
+  content:attr(data-text);
+  position:absolute;
+  overflow:hidden;
+  white-space:nowrap;
+  color:#fff;
+  -webkit-animation:loading 2s infinite linear;
+  animation:loading 2s infinite linear
+}
+@-webkit-keyframes loading {
+  0%,100%{max-width:0}
+  50%{max-width:210px}
+}
+@keyframes loading {
+  0%,100%{max-width:0}
+  50%{max-width:210px}
+}
+  </style>
+  <meta charset="utf-8">
+  <title>Shalukquri Ananda Club</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Fav Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicons/site.webmanifest">
+  <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#800080">
+  <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#9f00a7">
+  <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <app-root>
+    <div class="bp">
+      <div class="ld" data-text="AnandaClub">AnandaClub</div>
+    </div>
+  </app-root>
+</body>
+</html>

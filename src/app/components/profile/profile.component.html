@@ -1,0 +1,326 @@
+<div class="hrd">
+  <div class="cvr">
+    <img src="assets/bg-pro.jpg" alt="">
+  </div>
+
+  <div class="cnt">
+    <div class="pro">
+      <mat-card>
+
+        <div *ngIf="!proEditing">
+          <img src="assets/pro.jpg" alt="">
+          <div class="ep">
+            <button (click)="proEditing = true" mat-button class="edb">
+              Edit Profile Photo
+            </button>
+          </div>
+        </div>
+
+
+        <div *ngIf="proEditing">
+          <input style="display: none" type="file" (change)="onProSeleted($event)" accept="image/*" #proImage>
+          <img style="cursor: pointer" id="pRo" (click)="proImage.click()" src="assets/up.png" alt="">
+          <div class="ep">
+            <button color="warn" (click)="proEditing = false" mat-button class="edb">
+              Cancel
+            </button>
+            <button color="primary" (click)="proUpload()" mat-button class="edb">
+              Upload
+            </button>
+          </div>
+        </div>
+
+
+      </mat-card>
+    </div>
+    <div class="inf">
+      <div class="name">Fahad Hossain</div>
+      <div class="rpn">Cashier</div>
+    </div>
+  </div>
+
+  <div class="ec">
+    <button mat-button class="edb">Edit Cover Photo</button>
+  </div>
+</div>
+
+<div class="page">
+  <div class="row">
+    <div class="col-3">
+
+      <mat-card class="nt">
+
+        <mat-card-content>
+
+          <h3 class="tc tt">Notice for you</h3>
+
+          <hr>
+
+          <div class="bk">
+            <a matTooltip="বকেয়া টাকা" routerLink="/d/notice/id3">
+              ৳<span>20</span>
+            </a>
+          </div>
+
+          <ul class="nl">
+            <li>
+              <a matTooltip="Notice Tooltip"  routerLink="/d/notice/id1">
+                Notice 1
+              </a>
+            </li>
+
+            <li>
+              <a matTooltip="Notice Tooltip" routerLink="/d/notice/id2">
+                Notice 1
+              </a>
+            </li>
+          </ul>
+
+          <hr>
+
+          <h4 class="d" matTooltip="{{ functions.dateTooltip(1533890836843) }}">
+            {{ functions.timingWorld(1533890836843) }}
+          </h4>
+
+        </mat-card-content>
+      </mat-card>
+
+
+
+      <mat-card class="nt">
+
+        <mat-card-content>
+
+          <h3 class="tc tt">Notice Board</h3>
+
+          <hr>
+
+          <ul class="nl">
+            <li>
+              <a matTooltip="Notice Tooltip"  routerLink="/d/notice/id1">
+                Notice 1
+              </a>
+            </li>
+
+            <li>
+              <a matTooltip="Notice Tooltip"  routerLink="/d/notice/id2">
+                Notice 1
+              </a>
+            </li>
+          </ul>
+
+          <hr>
+
+          <h4 class="d" matTooltip="{{ functions.dateTooltip(1533890836843) }}">
+            {{ functions.timingWorld(1533890836843) }}
+          </h4>
+
+        </mat-card-content>
+
+      </mat-card>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="col-9">
+      <div class="p">
+        <p class="bet">
+          <a [routerLink]="['/profile', 'fahad', 'edit']" mat-button color="primary">Edit Profile</a>
+        </p>
+        <ul class="pil">
+
+
+          <li>
+            <table class="pit">
+              <thead>
+                <tr>
+                  <th>
+                    Name:
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Fahad Hossain
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+
+
+          <li>
+            <table class="pit">
+              <thead>
+                <tr>
+                  <th>
+                    Username:
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    fahad
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+
+
+          <li>
+            <table class="pit">
+              <thead>
+                <tr>
+                  <th>
+                    Email:
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    fahad.the.dev@gmail.com
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+
+
+          <li>
+            <table class="pit">
+              <thead>
+                <tr>
+                  <th>
+                    Phone:
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    +8801738817809
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+
+
+          <li>
+            <table class="pit">
+              <thead>
+                <tr>
+                  <th>
+                    Address:
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Shalukquri, Dhamoirhat, Naogaon
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+
+
+          <li>
+            <table class="pit">
+              <thead>
+                <tr>
+                  <th>
+                    Profession:
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Web & App Development
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+
+
+          <li>
+            <table class="pit">
+              <thead>
+                <tr>
+                  <th>
+                    Date of birth:
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    03 Nov, 1997
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+
+
+          <li>
+            <table class="pit">
+              <thead>
+                <tr>
+                  <th>
+                    Gander:
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Male
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+
+
+          <li>
+            <table class="pit">
+              <thead>
+                <tr>
+                  <th>
+                    Account Type:
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Member
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+
+
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+

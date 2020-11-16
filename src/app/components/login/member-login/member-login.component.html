@@ -1,0 +1,23 @@
+<mat-card-content class="fade">
+  <a mat-button routerLink="/login/client" color="accent">Client's login</a>
+  <mat-card-title>
+    <h3 class="tc">Member's Login</h3>
+  </mat-card-title>
+
+  <form (ngSubmit)="onMemberLogin(member)" class="lgf" #member="ngForm">
+    <figure class="field">
+      <mat-form-field>
+        <input matInput type="text" name="memberid" placeholder="Member's ID" [(ngModel)]="memberid" pattern="(?=.*[a-z]).{4,10}" matTooltip="Required: [a-z] between 4 & 10" required>
+      </mat-form-field>
+    </figure>
+
+    <figure class="field">
+      <mat-form-field>
+        <input matInput type="password" name="memberpassword" placeholder="Member's Password" [(ngModel)]="memberpassword" pattern="(?=.*\d)(?=.*[a-z]).{8,16}" matTooltip="Required: [a-z], [0-9] between 8 & 16" required>
+      </mat-form-field>
+    </figure>
+    <p class="tc">
+      <button mat-button color="primary" type="submit" [disabled]="member.form.status === 'INVALID'">Login</button>
+    </p>
+  </form>
+</mat-card-content>

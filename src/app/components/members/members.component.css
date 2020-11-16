@@ -1,0 +1,45 @@
+.bd .col-4, .bd .col-8 {
+	padding: 0;
+}
+.tt {
+	background-color: purple;
+	padding: 10px 0;
+	color: #fff;
+  margin: 0;
+  height: 40px;
+}
+#mlg {
+	border-right: 1px solid #0003;
+  overflow-y: auto;
+  min-height: 100px;
+}
+a.mli {
+	display: block;
+  border-top: 1px solid #0003;
+  padding: 3px 0;
+}
+a.mli.ac, a.mli:hover, a.mli:active, a.mli:focus {
+	background-color: darkmagenta;
+	color: #fff;
+}
+img.mi {
+	height: 100px;
+	width: 100px;
+	vertical-align: middle;
+	display: inline-block;
+	border: 1px solid #0003;
+	padding: 2px;
+	border-radius: 50%;
+}
+.mnf {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+.mnf .name {
+	line-height: 2;
+	font-size: 20px;
+}
+.mnf .rs {
+	font-size: 17px;
+}

@@ -1,0 +1,48 @@
+<div id="inbox">
+  <div class="header">
+    <div class="content">
+      <img src="assets/pro.jpg" alt="Fahad" class="img">
+      <div class="cont">
+        <div class="name">
+          <a routerLink="/profile">
+            Fahad Hossain
+          </a>
+        </div>
+        <div class="sts">Active now</div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="messageBox" class="msgbox">
+    <app-spinner-circle *ngIf="spinner"></app-spinner-circle>
+    <div class="cont">
+      <div class="msgs">
+
+        <div class="mb">
+          <div class="msg">
+            <a routerLink="/profile" class="name">@fahad</a>
+            <span class="tm" matTooltip="{{ functions.dateTooltip(1533180134294) }}">({{ functions.timingWorld(1533180134294) }})</span>:
+            <span class="message">Hello ...</span>
+          </div>
+          <div class="opt">
+            <div class="pt">
+              <button mat-button>::</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="box">
+    <form (ngSubmit)="sendMessage(msg)" class="form" #msg="ngForm">
+      <mat-form-field>
+        <input [(ngModel)]="message" name="message" matInput type="text" placeholder="Message..." required>
+      </mat-form-field>
+      <button mat-button color="primary" type="submit" [disabled]="msg.form.status === 'INVALID'">Send</button>
+    </form>
+  </div>
+</div>

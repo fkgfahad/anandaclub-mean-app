@@ -1,0 +1,95 @@
+#inbox {
+  background-color: #c0c0c0;
+  position: relative;
+}
+.header {
+	background-color: #459bbd;
+}
+.header .content {
+	padding: 10px;
+	height: 90px;
+	display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+.header .img {
+	width: 70px;
+	height: 70px;
+	vertical-align: middle;
+	border: 1px solid #0003;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.header .cont {
+	vertical-align: middle;
+	display: inline-block;
+}
+.cont .name a {
+	color: #700;
+	font-size: 18px;
+}
+.cont .name a:hover {
+  color: #300;
+}
+.header .sts {
+  font-size: 12px;
+  color: #222;
+}
+.msgbox {
+	background-color: darkslategrey;
+	position: absolute;
+	bottom: 80px;
+	right: 0;
+	width: 100%;
+	overflow-y: auto;
+	top: 90px;
+}
+.msgbox .cont {
+	padding: 10px;
+}
+.msgs .mb {
+  margin: 15px 0;
+  display: flex;
+	width: 100%;
+}
+.msgbox .msg {
+	background-color: honeydew;
+	padding: 5px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+.msgbox .msg a.name {
+	margin-right: 5px;
+	font-size: 14px;
+}
+.msgbox .msg .message {
+	font-size: 15px;
+}
+.msgs .opt {
+	color: #fff;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+	margin-left: 5px;
+}
+.opt .pt {
+	display: flex;
+}
+#inbox .box {
+	position: absolute;
+	background-color: beige;
+	width: 100%;
+	bottom: 0;
+	height: 80px;
+	padding: 5px;
+}
+.msg .tm {
+	font-size: 12px;
+}
+.pt .mat-button {
+	min-width: 0;
+	padding: 0 10px;
+}
+.box .mat-form-field {
+	width: 82%;
+}

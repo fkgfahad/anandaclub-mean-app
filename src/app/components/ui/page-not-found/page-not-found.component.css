@@ -1,0 +1,24 @@
+.pnf {
+  padding: 100px 0;
+  min-height: 100vh;
+  height: 100%;
+	background-image: radial-gradient(rgba(196, 114, 38, 0.5), rgba(146, 121, 37, 0.5));
+}
+.cnt {margin-top: 20px;}
+.cnt h3 {
+  margin: 0;
+	font-weight: normal;
+	color: #a52a2a;
+	font-size: 18px;
+}
+.c404 h3 {
+	margin: 0;
+	color: #b89261;
+	font-size: 20px;
+}
+.c404 h1 {
+	margin: 10px;
+	font-size: 100px;
+	font-weight: normal;
+	color: #b05c5c;
+}

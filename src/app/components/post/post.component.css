@@ -1,0 +1,53 @@
+.ro {
+	position: absolute;
+	right: 25px;
+}
+.dp {
+	font-size: 12px;
+	color: #686868;
+}
+div.xx {
+	font-size: 18px;
+	font-family: sans-serif;
+	font-weight: normal;
+	color: #444;
+}
+img.xx {
+	height: auto;
+	width: auto;
+	max-width: 100%;
+}
+.pd .mat-button {
+	width: 50%;
+	padding: 0;
+}
+.mat-form-field {
+	width: 82%;
+}
+.ec {
+	margin: 10px 0;
+}
+.co {
+	float: right;
+}
+.tm {
+	font-size: 12px;
+	color: #686868;
+}
+.cb {
+	padding-left: 15px;
+	height: auto;
+	max-height: 200px;
+	overflow-y: auto;
+}
+.tp {
+	margin: 0;
+	font-size: 12px;
+	letter-spacing: 10px;
+}
+.mat-card {
+	margin: 30px 0;
+}
+.mat-card-footer {
+	margin: 0 !important;
+}

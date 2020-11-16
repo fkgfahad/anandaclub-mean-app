@@ -1,0 +1,21 @@
+<div class="hr">
+  <div class="page">
+    <p class="tc hd">Search...</p>
+    <div class="se">
+      <mat-form-field>
+        <input
+          type="search"
+          matInput
+          [(ngModel)]="search"
+          #key
+          (input)="onAutoSearch(key.value)"
+          name="search"
+          id="search"
+          matTooltip="Start typing"
+          placeholder="Search keywords"
+          spellcheck="false"
+        >
+      </mat-form-field>
+    </div>
+  </div>
+</div>

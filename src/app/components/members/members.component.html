@@ -1,0 +1,48 @@
+<div class="bd">
+  <div class="page">
+    <div class="row">
+      <div class="col-4">
+        <p class="tc tt">Members (12)</p>
+        <div id="mlg">
+
+          <a routerLinkActive="ac" class="mli" [routerLink]="['/members', 'fahad']">
+            <img src="assets/pro.jpg" alt="" class="mi">
+            <div class="mnf">
+              <div class="name">Fahad Hossain</div>
+              <div class="rs">Cashier</div>
+            </div>
+          </a>
+
+          <a routerLinkActive="ac" class="mli" [routerLink]="['/members', 'shakil']">
+            <img src="assets/pro.jpg" alt="" class="mi">
+            <div class="mnf">
+              <div class="name">Shakil Hossain</div>
+              <div class="rs">Member</div>
+            </div>
+          </a>
+
+          <a routerLinkActive="ac" class="mli" [routerLink]="['/members', 'alim']">
+            <img src="assets/pro.jpg" alt="" class="mi">
+            <div class="mnf">
+              <div class="name">Abdul Alim</div>
+              <div class="rs">Secretary</div>
+            </div>
+          </a>
+
+          <a routerLinkActive="ac" class="mli" [routerLink]="['/members', 'sohel']">
+            <img src="assets/pro.jpg" alt="" class="mi">
+            <div class="mnf">
+              <div class="name">Sohel Hossain</div>
+              <div class="rs">Chairman</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+      <div class="col-8">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
+

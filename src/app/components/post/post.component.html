@@ -1,0 +1,135 @@
+<div class="page">
+  <div class="row">
+    <div class="col-8 offset-2">
+
+      <!-- Post -->
+      <mat-card>
+
+        <!-- Header -->
+        <mat-card-header>
+          <div class="hd">
+
+            <!-- Poster -->
+            <a [routerLink]="['/profile', 'fahad']">
+              Fahad Hossain
+            </a>
+
+            <!-- Date & Privacy -->
+            <div class="dp">
+              <span matTooltip="{{ functions.dateTooltip(1533196874240) }}">
+                {{ functions.timingWorld(1533196874240) }}
+              </span>
+              |
+              <span>public</span>
+            </div>
+          </div>
+
+          <!-- Options -->
+        <div class="ro">
+          <button mat-icon-button [matMenuTriggerFor]="postMoreOps">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+          <mat-menu #postMoreOps="matMenu">
+            <button mat-menu-item>
+              <mat-icon>clear</mat-icon>
+              <span>Delete Post</span>
+            </button>
+
+            <button mat-menu-item>
+              <mat-icon>add_box</mat-icon>
+              <span>Add Tag</span>
+            </button>
+          </mat-menu>
+        </div>
+
+        </mat-card-header>
+
+        <hr>
+
+        <!-- Post -->
+        <mat-card-content>
+          <div class="mp">
+            <div class="xx">Hello World</div>
+            <img src="assets/pro.jpg" alt="" class="xx">
+          </div>
+
+          <!-- likes -->
+          <div class="pd">
+            <button (click)="likePost('100024245048384')" mat-button>
+              Like
+            </button>
+            <a mat-button [routerLink]="['/post', '100024245048384']">
+              something
+            </a>
+          </div>
+        </mat-card-content>
+
+        <hr>
+
+        <mat-card-footer>
+
+          <!-- comments -->
+          <form (ngSubmit)="sendComment(inp.value.comment, '100024245048384')" #inp="ngForm">
+            <mat-form-field>
+              <input matInput type="text" [(ngModel)]="comment" name="comment" id="comment" placeholder="Comment..." required>
+            </mat-form-field>
+            <button type="submit" mat-button color="primary" [disabled]="inp.form.status === 'INVALID'">
+              Comment
+            </button>
+          </form>
+
+          <p class="tc tp">
+            <small>Someone typing...</small>
+          </p>
+
+          <div class="cb">
+
+            <!-- Each comment -->
+            <div class="ec">
+              <div class="cr">
+                <a [routerLink]="['/profile', 'fahad']">
+                  Fahad Hossain
+                </a>
+                <span class="tm" matTooltip="{{ functions.dateTooltip(1533199957089) }}">
+                  {{ functions.timingWorld(1533199957089) }}
+                </span>
+                <div class="co">
+                  <button mat-button>o</button>
+                </div>
+              </div>
+              <div class="mc">
+                Hello! how r u?
+              </div>
+            </div>
+
+            <!-- Each comment -->
+            <div class="ec">
+              <div class="cr">
+                <a [routerLink]="['/profile', 'shalil']">
+                  Shakil Hossain
+                </a>
+                <span class="tm" matTooltip="{{ functions.dateTooltip(1533199959089) }}">
+                  {{ functions.timingWorld(1533199959089) }}
+                </span>
+                <div class="co">
+                  <button mat-button>o</button>
+                </div>
+              </div>
+              <div class="mc">
+                Hello! how r u?
+              </div>
+            </div>
+
+          </div>
+
+        </mat-card-footer>
+
+    </mat-card>
+
+
+
+
+    </div>
+  </div>
+</div>
+

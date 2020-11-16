@@ -1,0 +1,40 @@
+.mat-toolbar {
+  height: 50px !important;
+  position: fixed;
+  z-index: 9999;
+  box-shadow: 0 2px 2px #000;
+}
+.tlb {height: 50px;}
+.nb {
+	color: #dedede;
+	float: left;
+  font-size: 25px;
+  transition: 0.3s;
+}
+.nb:hover {
+	color: #fff;
+}
+.nl {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+.nl li {
+	list-style: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.ni {
+	color: #ddd;
+	text-decoration: none;
+	padding: 5px 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.ni:hover {
+	color: #808;
+}
+li.na .ni {
+	background-color: #0005;
+}

@@ -1,0 +1,153 @@
+.hrd {
+	margin: 0;
+  height: 300px;
+  background-color: #0003;
+	background-size: cover;
+	background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.hrd .ec {
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+	background-color: #fff;
+}
+.ec .edb, .ep .edb {
+  line-height: 2;
+  font-size: 13px;
+}
+.hrd .cvr {
+	height: 300px;
+	overflow-y: scroll;
+	width: 100%;
+}
+.cvr img {margin-bottom: -6px;}
+.hrd .cnt {
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+	top: 10px;
+}
+.cnt .pro {
+	height: 100%;
+	width: 250px;
+	vertical-align: middle;
+  display: inline-block;
+}
+.pro .mat-card {
+	padding: 3px;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff6;
+}
+.pro img {
+	height: 200px;
+  width: 200px;
+  background-color: #fff;
+	border: 1px solid #0003;
+	border-radius: 50%;
+	padding: 5px;
+}
+.pro .ep {
+	position: absolute;
+	bottom: 5px;
+	background-color: #fff;
+}
+.cnt .inf {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 30px;
+}
+.inf .name {
+	font-size: 30px;
+	padding-bottom: 10px;
+	text-shadow: 0 0 10px #fff;
+  color: #808;
+	font-weight: normal;
+}
+.inf .rpn {
+	font-size: 20px;
+	color: #333;
+	text-shadow: 0 0 10px #fff;
+}
+
+
+
+/* Notice */
+.nt.mat-card {
+  margin-top: 10px;
+  box-shadow: 0 0 5px #000;
+}
+.tt {
+	font-weight: normal;
+	font-size: 22px;
+}
+.d {
+	font-weight: normal;
+	font-size: 12px;
+}
+ul.nl {
+	margin: 0;
+  padding: 0;
+  padding-left: 16px;
+}
+ul.nl li {
+	list-style-type: disclosure-closed;
+}
+ul.nl li a, ul.nl li a:active, ul.nl li a:focus, ul.nl li a:visited {
+	display: block;
+	margin: 0;
+	padding: 5px 0;
+	color: #429f9f;
+	font-size: 16px;
+}
+ul.nl li a:hover {
+  color: #025757;
+  text-decoration: underline;
+}
+.bk {
+	display: flex;
+	height: 80px;
+	justify-content: center;
+	align-items: center;
+}
+.bk a {
+  transform: scale(1);
+	font-size: 70px;
+}
+.bk a:hover {
+  transform: scale(0.9);
+}
+
+
+/* main profile */
+ul.pil {
+	margin: 0;
+	padding: 0;
+  list-style-type: none;
+  letter-spacing: 1px;
+}
+ul.pil li {
+	display: block;
+	list-style-type: none;
+	background-color: #fff;
+	padding: 15px 5px;
+	font-size: 15px;
+	border-top: 1px solid #0005;
+}
+table.pit {
+	display: flex;
+}
+.pit thead {
+	display: grid;
+	flex: 0 30%;
+}
+.pit tbody {
+	display: grid;
+  flex: 0 70%;
+  color: #055;
+}
+

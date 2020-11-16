@@ -1,0 +1,72 @@
+.c-rooms {
+	background-color: #ddd;
+	border-right: 1px solid #a2a2a2;
+}
+.conetnt {
+	overflow-y: auto;
+	border-top: 1px solid #a2a2a2;
+}
+.switch, .rooms, onlines {
+  margin: 0;
+}
+.switch {
+	padding: 10px 30px;
+}
+.switch button {
+	background-color: #673ab7 !important;
+	color: #fff !important;
+}
+a.room {
+	border-top: 1px solid #a2a2a2;
+	display: block;
+	padding: 8px 3px;
+	transition: 0.4s;
+}
+.online {
+	display: block;
+	border-top: 1px solid #a2a2a2;
+	padding: 10px 5px;
+	transition: 0.4s;
+}
+a.room:hover, a.room:active, a.room:focus, a.room.ac,
+.online:hover, .online:active, .online:focus, .online.ac {
+	background-color: #0003;
+}
+.room .img {
+	height: 60px;
+	width: 60px;
+	border: 1px solid #0003;
+	border-radius: 50%;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.room .cont {
+	display: inline-block;
+	vertical-align: middle;
+}
+.room .name {
+	font-size: 16px;
+	padding-bottom: 8px;
+	color: #8600c2;
+}
+.room .msg {
+	font-size: 14px;
+	color: #571818;
+}
+.room .msg::before {
+	content: "> ";
+}
+.online .img {
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+	border: 1px solid #0003;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+.online .name {
+	vertical-align: middle;
+	display: inline-block;
+	font-size: 15px;
+	color: #8600c2;
+}

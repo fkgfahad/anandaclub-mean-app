@@ -1,0 +1,44 @@
+.nt.mat-card {
+  margin-top: 10px;
+  box-shadow: 0 0 5px #000;
+}
+.tt {
+	font-weight: normal;
+	font-size: 22px;
+}
+.d {
+	font-weight: normal;
+	font-size: 12px;
+}
+ul.nl {
+	margin: 0;
+  padding: 0;
+  padding-left: 16px;
+}
+ul.nl li {
+	list-style-type: disclosure-closed;
+}
+ul.nl li a, ul.nl li a:active, ul.nl li a:focus, ul.nl li a:visited {
+	display: block;
+	margin: 0;
+	padding: 5px 0;
+	color: #429f9f;
+	font-size: 16px;
+}
+ul.nl li a:hover {
+  color: #025757;
+  text-decoration: underline;
+}
+.bk {
+	display: flex;
+	height: 80px;
+	justify-content: center;
+	align-items: center;
+}
+.bk a {
+  transform: scale(1);
+	font-size: 70px;
+}
+.bk a:hover {
+  transform: scale(0.9);
+}

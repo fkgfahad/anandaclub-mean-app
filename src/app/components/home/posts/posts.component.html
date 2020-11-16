@@ -1,0 +1,113 @@
+<app-new-post></app-new-post>
+<hr>
+
+<!-- Posts -->
+<div class="ab">
+
+  <!-- Header -->
+  <div class="hd">
+
+    <!-- Poster -->
+    <a [routerLink]="['/profile', 'fahad']">
+      Fahad Hossain
+    </a>
+
+    <!-- Options -->
+    <div class="ro">
+      <button mat-icon-button [matMenuTriggerFor]="postMoreOps">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #postMoreOps="matMenu">
+        <button mat-menu-item>
+          <mat-icon>clear</mat-icon>
+          <span>Delete Post</span>
+        </button>
+
+        <button mat-menu-item>
+          <mat-icon>add_box</mat-icon>
+          <span>Add Tag</span>
+        </button>
+      </mat-menu>
+    </div>
+
+    <!-- Date & Privacy -->
+    <div class="dp">
+      <span matTooltip="{{ functions.dateTooltip(1533196874240) }}">
+        {{ functions.timingWorld(1533196874240) }}
+      </span>
+      |
+      <span>public</span>
+    </div>
+  </div>
+
+  <!-- Post -->
+  <div class="mp">
+    <div class="xx">Hello World</div>
+    <img src="assets/pro.jpg" alt="" class="xx">
+  </div>
+
+  <!-- likes -->
+  <div class="pd">
+    <button (click)="likePost('100024245048384')" mat-icon-button>
+      <mat-icon>thumb_up</mat-icon>
+      <!-- <mat-icon>thumb_down</mat-icon> -->
+    </button>
+    <a mat-button [routerLink]="['/post', '100024245048384']">
+      Full post
+    </a>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <!-- comments -->
+  <div class="cc">
+    <form (ngSubmit)="sendComment(inp)" #inp="ngForm">
+      <mat-form-field>
+        <input matInput type="text" [(ngModel)]="comment" name="comment" id="comment" placeholder="Comment..." required>
+      </mat-form-field>
+      <button type="submit" mat-button color="primary" [disabled]="inp.form.status === 'INVALID'">
+        Comment
+      </button>
+    </form>
+    <div class="cb">
+
+      <!-- Each comment -->
+      <div class="ec">
+        <div class="cr">
+          <a [routerLink]="['/profile', 'fahad']">
+            Fahad Hossain
+          </a>
+          <span class="tm" matTooltip="{{ functions.dateTooltip(1533199957089) }}">
+            {{ functions.timingWorld(1533199957089) }}
+          </span>
+          <div class="co">
+            <button mat-button>o</button>
+          </div>
+        </div>
+        <div class="mc">
+          Hello! how r u?
+        </div>
+      </div>
+
+      <!-- Each comment -->
+      <div class="ec">
+        <div class="cr">
+          <a [routerLink]="['/profile', 'shalil']">
+            Shakil Hossain
+          </a>
+          <span class="tm" matTooltip="{{ functions.dateTooltip(1533199959089) }}">
+            {{ functions.timingWorld(1533199959089) }}
+          </span>
+          <div class="co">
+            <button mat-button>o</button>
+          </div>
+        </div>
+        <div class="mc">
+          Hello! how r u?
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>

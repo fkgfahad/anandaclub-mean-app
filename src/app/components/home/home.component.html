@@ -1,0 +1,88 @@
+
+<router-outlet></router-outlet>
+
+<div class="page">
+  <div class="row">
+    <div class="col-7">
+      <app-posts></app-posts>
+    </div>
+    <div class="col-5">
+
+
+      <mat-card class="nt">
+
+        <mat-card-content>
+
+          <h3 class="tc tt">Notice for you</h3>
+
+          <hr>
+
+          <div class="bk">
+            <a routerLink="/notice/id3">
+              ৳<span>20</span>
+            </a>
+          </div>
+
+          <ul class="nl">
+            <li>
+              <a matTooltip="Notice Tooltip"  routerLink="/notice/id1">
+                Notice 1
+              </a>
+            </li>
+
+            <li>
+              <a matTooltip="Notice Tooltip" routerLink="/notice/id2">
+                Notice 1
+              </a>
+            </li>
+          </ul>
+
+          <hr>
+
+          <h4 class="d" matTooltip="{{ functions.dateTooltip(1533890836843) }}">
+            {{ functions.timingWorld(1533890836843) }}
+          </h4>
+
+        </mat-card-content>
+      </mat-card>
+
+
+
+      <mat-card class="nt">
+
+          <mat-card-content>
+
+            <h3 class="tc tt">Notice Board</h3>
+
+            <hr>
+
+            <ul class="nl">
+              <li>
+                <a matTooltip="Notice Tooltip"  routerLink="/notice/id1">
+                  Notice 1
+                </a>
+              </li>
+
+              <li>
+                <a matTooltip="Notice Tooltip"  routerLink="/notice/id2">
+                  Notice 1
+                </a>
+              </li>
+            </ul>
+
+            <hr>
+
+            <h4 class="d" matTooltip="{{ functions.dateTooltip(1533890836843) }}">
+              {{ functions.timingWorld(1533890836843) }}
+            </h4>
+
+          </mat-card-content>
+
+        </mat-card>
+
+
+
+    </div>
+  </div>
+</div>
+

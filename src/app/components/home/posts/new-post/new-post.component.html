@@ -1,0 +1,37 @@
+<div class="fr">
+  <form (ngSubmit)="sendPost(input)" #input="ngForm" enctype="multipart/form-data">
+    <figure>
+      <mat-form-field>
+        <textarea rows="2" matInput type="text" [(ngModel)]="post" name="post" id="post" placeholder="New post..." required></textarea>
+      </mat-form-field>
+    </figure>
+
+    <div *ngIf="selectedImg" class="imgs">
+      <button matTooltip="Delete selected image" (click)="imgDisSecected()" mat-icon-button color="warn">
+        <mat-icon>clear</mat-icon>
+      </button>
+      <img [src]="imgdata" alt="" class="si">
+    </div>
+
+    <figure class="le">
+      <mat-form-field class="pf">
+        <mat-select [(ngModel)]="privacy" name="privacy" placeholder="privacy" required>
+          <mat-option *ngFor="let prc of prcs" [value]="prc.value">
+            {{ prc.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <button [disabled]="input.form.status === 'INVALID'" mat-button color="primary" type="submit">Publish</button>
+    </figure>
+
+  </form>
+
+  <figure class="imb">
+    <input style="display: none" (change)="imgSelected($event)" accept="image/*" type="file" multiple #image>
+    <button matTooltip="Select image" (click)="image.click()" mat-icon-button>
+      <mat-icon>insert_photo</mat-icon>
+    </button>
+  </figure>
+
+</div>

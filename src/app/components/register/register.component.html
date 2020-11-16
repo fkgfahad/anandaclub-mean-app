@@ -1,0 +1,66 @@
+<div class="drh">
+  <div class="page">
+    <h1 class="tc">We're happy to have you here. Welcome!</h1>
+  </div>
+</div>
+<div class="body">
+  <div class="page">
+    <form class="col-8 offset-2" (ngSubmit)="regUser(user.value)" #user="ngForm">
+      <div class="sh tc">
+        After this proccess you will be registered as a client of AnandaClub. <a routerLink="/help/what-is-a-client">What is a client in AnandaClub?</a>
+      </div>
+
+      <figure class="fg">
+        <mat-form-field>
+          <input [(ngModel)]="name" matInput type="text" name="name" placeholder="Full name" required>
+        </mat-form-field>
+      </figure>
+
+      <figure class="fg">
+        <mat-form-field>
+          <input [(ngModel)]="username" matInput type="text" name="username" placeholder="Choose a username" pattern="(?=.*[a-z]).{4,10}" matTooltip="Required: [a-z] between 4 & 10" required>
+        </mat-form-field>
+      </figure>
+
+      <figure class="fg">
+        <mat-form-field>
+          <input [(ngModel)]="useremail" matInput type="email" name="useremail" placeholder="Your email">
+        </mat-form-field>
+      </figure>
+
+      <figure class="fg">
+        <label>Gender:</label>
+        <mat-radio-group [(ngModel)]="gender">
+          <mat-radio-button value="Male">Male</mat-radio-button>
+          <mat-radio-button value="Female">Female</mat-radio-button>
+        </mat-radio-group>
+      </figure>
+
+      <figure class="fg">
+        <mat-form-field>
+          <input matInput [matDatepicker]="birthdate" placeholder="Choose your birth date">
+          <mat-datepicker-toggle matSuffix [for]="birthdate"></mat-datepicker-toggle>
+          <mat-datepicker #birthdate startView="year" [startAt]="startDate"></mat-datepicker>
+        </mat-form-field>
+      </figure>
+
+      <figure class="fg">
+        <mat-form-field>
+          <input [(ngModel)]="password" matInput type="password" name="password" placeholder="New password" pattern="(?=.*\d)(?=.*[a-z]).{8,16}" matTooltip="Required: [a-z], [0-9] between 8 & 16" required>
+        </mat-form-field>
+      </figure>
+
+      <figure class="fg">
+        <mat-form-field>
+          <input [(ngModel)]="cpassword" matInput type="password" name="cpassword" placeholder="Confirm new password" pattern="(?=.*\d)(?=.*[a-z]).{8,16}" matTooltip="Required: [a-z], [0-9] between 8 & 16" [accept]="password" required>
+        </mat-form-field>
+      </figure>
+
+      <figure class="fg">
+        <button class="submit" mat-button type="submit" [disabled]="user.form.status !== 'VALID'">
+          Register
+        </button>
+      </figure>
+    </form>
+  </div>
+</div>

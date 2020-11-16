@@ -1,0 +1,41 @@
+<div id="rooms">
+  <div class="switch">
+    <button (click)="showRooms()" mat-button>
+      <span *ngIf="!rooms">Recent Chat Rooms</span>
+      <span *ngIf="rooms">Active Members</span>
+    </button>
+  </div>
+  <div class="conetnt">
+    <!-- Chat Rooms -->
+    <div class="rooms fade" *ngIf="rooms">
+      <a routerLinkActive="ac" class="room" [routerLink]="['/messages', 'room1']">
+        <img src="assets/pro.jpg" alt="Fahad" class="img">
+        <div class="cont">
+          <div class="name">Fahad Hossain</div>
+          <div class="msg">Hello</div>
+        </div>
+      </a>
+
+      <a routerLinkActive="ac" class="room" [routerLink]="['/messages', 'room2']">
+        <img src="assets/pro.jpg" alt="Shakil" class="img">
+        <div class="cont">
+          <div class="name">Shakil Hossen</div>
+          <div class="msg">Hello there</div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Active Members -->
+    <div class="onlines fade" *ngIf="!rooms">
+      <a routerLinkActive="ac" class="online" [routerLink]="['/messages', 'room1']">
+        <img src="assets/pro.jpg" alt="Fahad" class="img">
+        <div class="name">Fahad Hossain</div>
+      </a>
+
+      <a routerLinkActive="ac" class="online" [routerLink]="['/messages', 'room2']">
+        <img src="assets/pro.jpg" alt="Shakil" class="img">
+        <div class="name">Shakil Hossen</div>
+      </a>
+    </div>
+  </div>
+</div>

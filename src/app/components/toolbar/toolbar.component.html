@@ -1,0 +1,41 @@
+<mat-toolbar color="primary">
+  <div class="page">
+    <a class="nb" routerLink="/">AnandaClub</a>
+    <ul class="nl">
+      <li routerLinkActive="na" [routerLinkActiveOptions]="{exact: true}">
+        <a routerLink="/" class="ni">Home</a>
+      </li>
+      <li routerLinkActive="na">
+        <a routerLink="/profile" class="ni">Profile</a>
+      </li>
+      <li routerLinkActive="na">
+        <a routerLink="/messages" class="ni">Messages</a>
+      </li>
+      <li routerLinkActive="na">
+        <a routerLink="/activities" class="ni">Activities</a>
+      </li>
+      <li routerLinkActive="na">
+        <a routerLink="/members" class="ni">Members</a>
+      </li>
+      <li routerLinkActive="na">
+        <a routerLink="/dashboard" class="ni">Dashboard</a>
+      </li>
+      <li routerLinkActive="na">
+        <a routerLink="/help" class="ni">Help</a>
+      </li>
+      <li routerLinkActive="na">
+        <a routerLink="/register" class="ni">Register</a>
+      </li>
+      <li routerLinkActive="na">
+        <a routerLink="/login" class="ni">Login</a>
+      </li>
+      <li routerLinkActive="na">
+        <a routerLink="/search" class="ni">Search</a>
+      </li>
+      <li>
+        <a (click)="clickLogout()" class="ni">Logout</a>
+      </li>
+    </ul>
+  </div>
+</mat-toolbar>
+<div class="tlb"></div>

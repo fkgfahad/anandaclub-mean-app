@@ -1,0 +1,44 @@
+.drh {
+	background-color: #007a83;
+	margin: 0;
+	padding: 30px 0;
+	color: #fff;
+}
+.drh h1 {
+	font-weight: normal;
+	font-size: 36px;
+	font-family: sans-serif 'Roboto';
+}
+form {
+  padding: 100px 0;
+  margin-bottom: 70px;
+	background-color: #0003;
+}
+.chb {
+	display: inline-block;
+	margin-right: 80px;
+}
+.mat-form-field {
+	width: 100%;
+}
+.fg {
+	background-color: #ddd;
+	padding: 20px 10px;
+	margin: 10px 20px;
+}
+.mat-button.submit {
+	color: #ddd;
+	background-color: slateblue;
+	display: block;
+	margin-top: 20px;
+}
+.sh {
+	margin: 0 auto 50px;
+	width: 70%;
+	line-height: 1.7;
+	font-size: 16px;
+}
+.sh a:hover {
+	text-decoration: underline;
+}
+
