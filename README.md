@@ -1,3 +1,3 @@
-# AnandaClub Mean App
+# ananda
 
-## MEAN Web Application for Shalukquri Ananda Club.
+MEAN web application for a social club.
