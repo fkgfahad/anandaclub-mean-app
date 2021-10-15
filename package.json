@@ -1,12 +1,12 @@
 {
-  "name": "anandaclub-mean-app",
+  "name": "ananda",
   "version": "1.0.0",
-  "description": "MEAN Web Application for Shalukquri Ananda Club.",
+  "description": "MEAN Web Application for a social club.",
   "main": "server.js",
   "author": {
     "name": "Fahad Hossain",
-    "email": "fahad.the.dev@gmail.com",
-    "url": "https://anandaclub.herokuapp.com"
+    "email": "fahad@avalonx.io",
+    "url": "https://avalonx.io"
   },
   "scripts": {
     "ng": "ng",
